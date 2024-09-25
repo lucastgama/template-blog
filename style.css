@@ -1,3 +1,12 @@
+/*
+Theme Name:   Eterno Estagiário
+Theme URI:    https://github.com/lucastgama/template-blog
+Author:       Lucas Gama
+Author        URI: https://github.com/lucastgama/
+Description:  Um tema para o blog Eterno Estagiário
+Version:      1.0
+*/
+
 :root {
   --black: #111111;
   --blue: #2ab4df;
@@ -93,7 +102,7 @@ body {
   display: flex;
   font-weight: 700;
   font-size: 2.1em;
-  color: var(--gray);
+  color: var(--blue);
 }
 .info__container span {
   color: var(--gray);
