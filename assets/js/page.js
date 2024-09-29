@@ -1,16 +1,17 @@
 jQuery(document).ready(function ($) {
-    $('.category-button').on('click', function () {
-        let categoryId = $(this).data('category-id');
+    $('.page-numbers').on('click', function (e) {
+        e.preventDefault();
+        let pageNumber = $(this).text().trim();
 
         $.ajax({
             url: ajax_data.ajax_url,
             type: 'POST',
             data: {
-                action: 'filter_posts_by_category',
-                category_id: categoryId
+                action: 'change_post_page',
+                page_number: pageNumber
             },
             beforeSend: function () {
-                const loadersHtml = generateLoaders(4);
+                const loadersHtml = generateLoaders(8);
                 $('.container__posts .grid').html(loadersHtml);
             },
             success: function (response) {
@@ -18,7 +19,7 @@ jQuery(document).ready(function ($) {
             }
         });
     })
-});
+})
 
 function createLoaderCard() {
     return `
