@@ -1,23 +1,38 @@
 jQuery(document).ready(function ($) {
-    $('.category-button').on('click', function () {
-        let categoryId = $(this).data('category-id');
+    let currentPage = 1;
+    let currentCategory = 0;
 
+    $('.category-button').on('click', function () {
+        currentCategory = $(this).data('category-id');
+        currentPage = 1;
+        loadPostsByCategory(currentCategory, currentPage);
+    });
+
+    function loadPostsByCategory(categoryId, page) {
         $.ajax({
             url: ajax_data.ajax_url,
             type: 'POST',
             data: {
                 action: 'filter_posts_by_category',
-                category_id: categoryId
+                category_id: categoryId,
+                paged: page
             },
             beforeSend: function () {
-                const loadersHtml = generateLoaders(4);
+                const loadersHtml = generateLoaders(8);
                 $('.container__posts .grid').html(loadersHtml);
             },
             success: function (response) {
-                $('.container__posts .grid').html(response);
+                $('.container__posts .grid').html(response.data.posts);
+                $('.posts__pagination').html(response.data.pagination);
             }
         });
-    })
+    }
+    $(document).on('click', '.pagination__border li a', function (e) {
+        e.preventDefault();
+        let page = $(this).data('page');
+        console.log(page)
+        loadPostsByCategory(currentCategory, page);
+    });
 });
 
 function createLoaderCard() {

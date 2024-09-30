@@ -22,6 +22,15 @@ Version:      1.0
 }
 body {
   background-color: var(--black);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+header{
+  width: 100%;
+  max-width: 1440px;
+  background-color:var(--black);
 }
 .btnRound {
   width: 176px;
@@ -62,7 +71,7 @@ body {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  padding: 1.8rem 3.6rem;
+  padding: 1rem 3.2rem;
   gap: 1rem;
 }
 
@@ -184,7 +193,7 @@ span.info__lower_text{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.8rem 3.6rem;
+  padding: 1rem 3.2rem;
   gap: 1rem;
 }
 
@@ -298,7 +307,7 @@ span.info__lower_text{
 .container__about {
   width: 100%;
   max-width: 1440px;
-  padding: 1.8rem 3.6rem;
+  padding: 1rem 3.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +355,7 @@ span.info__lower_text{
 .container__rules {
   width: 100%;
   max-width: 1440px;
-  padding: 1.8rem 3.6rem;
+  padding: 1rem 3.2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -447,4 +456,20 @@ span.info__lower_text{
 
 .copyright__text {
   color: var(--blue);
+}
+
+/* Scroll*/
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 20px;
+  border: 3px solid var(--black);
 }

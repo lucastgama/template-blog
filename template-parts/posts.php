@@ -30,7 +30,7 @@ $categories = get_categories();
                     <?php if (has_post_thumbnail()) : ?>
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
                     <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg" alt="Imagem Padrão" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NoImage.png" alt="Imagem Padrão" />
                     <?php endif; ?>
                     <div class="posts__card__tag">
                         <?php
@@ -67,6 +67,10 @@ $categories = get_categories();
                 ));
                 if (!empty($pagination)) :
                     foreach ($pagination as $page) :
+                        if (preg_match('/page\/([0-9]+)/', $page, $matches)) {
+                            $page_number = $matches[1];
+                            $page = str_replace('<a', '<a data-page="' . $page_number . '"', $page);
+                        }
                         echo '<li>' . $page . '</li>';
                     endforeach;
                 endif;
