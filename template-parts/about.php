@@ -1,4 +1,4 @@
-<section class="container__about">
+<section class="container__about" id="about">
     <div class="about__image">
         <div class="image__frist">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Gosh.png" alt="Alguem me ajuda" />

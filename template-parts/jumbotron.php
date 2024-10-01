@@ -1,4 +1,4 @@
-<section class="container__jumbotron">
+<section class="container__jumbotron" id="home">
     <div class="jumbotron__information">
         <div class="information__text">
             <h3>

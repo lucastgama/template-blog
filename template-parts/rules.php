@@ -1,4 +1,4 @@
-<section class="container__rules">
+<section class="container__rules" id="rules">
     <h3>Regras do blog</h3>
     <div class="rules__cards">
         <div class="rules__card">
