@@ -18,29 +18,27 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <a href="#home">Eterno <span>Estagiário.</span></a>
-      </div>
-      <div id="mainListDiv" class="navbar__main_list">
-        <ul class="main_list__navbar_links">
-          <li><a href="#posts">Blog</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#rules">Regras</a></li>
-        </ul>
-        <span class="navTrigger">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
-      </div>
-      <div class="teste active">
-        <ul class="main_list__navbar_links_mobile">
-          <li><a href="#posts">Blog</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#rules">Regras</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar_container">
+    <div class="navbar__logo">
+      <a href="#home">Eterno <span>Estagiário.</span></a>
+    </div>
+    <div id="mainListDiv" class="navbar__main_list">
+      <ul class="main_list__navbar_links">
+        <li><a href="#posts">Blog</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#rules">Regras</a></li>
+      </ul>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+    <div class="main_list__navbar__mobile">
+      <ul class="main_list__navbar_links_mobile">
+        <li><a href="#posts">Blog</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#rules">Regras</a></li>
+      </ul>
+    </div>
+  </nav>
