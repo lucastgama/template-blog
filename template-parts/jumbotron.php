@@ -1,4 +1,4 @@
-<section class="container__jumbotron" id="home">
+<section class="container-ee jumbotron" id="home">
     <div class="jumbotron__information">
         <div class="information__text">
             <h3>
@@ -11,19 +11,19 @@
             </p>
             <a type="button" class="btnRoundGray">Não clique aqui</a>
         </div>
-        <div class="information__container">
-            <div class="information__container__frist">
+        <div class="information__grid">
+            <div class="information__grid__frist">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/JobHunt.png" alt="Procurando emprego" />
             </div>
-            <div class="information__container__second">
+            <div class="information__grid__second">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CityAdventure.png" alt="Primeiro dia na cidade grande" />
             </div>
-            <div class="information__container__third">
+            <div class="information__grid__third">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/StudySession.png" alt="Meu dia de estudos" />
             </div>
         </div>
     </div>
-    <div class="container__details">
+    <div class="container-ee details">
         <div class="details__text">
             <p>
                 Conteúdos do site para estagiários. Caso você não seja um, pressione Ctrl + W ou Command + W para explorar lugares mais importantes!
