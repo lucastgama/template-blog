@@ -1,7 +1,7 @@
-<section class="container-ee jumbotron" id="home">
+<section class="container__ee jumbotron" id="home">
     <div class="jumbotron__information">
         <div class="information__text">
-            <h3>
+            <h3 class="section__title ">
                 Eterno <span>estagiário</span> é um blog para informações
                 <span>inrrelevantes</span> para pessoas mais inrrelevantes ainda.
             </h3>
@@ -9,7 +9,6 @@
                 Você já se sentiu perdido em meio a tantas informações irrelevantes?
                 Bem-vindo ao clube! Neste blog, vamos piorar ainda mais essa situação com conteúdos ainda mais confusos, para que você possa ter uma noção real de como é trabalhar na programação.
             </p>
-            <a type="button" class="btnRoundGray">Não clique aqui</a>
         </div>
         <div class="information__grid">
             <div class="information__grid__frist">
@@ -23,12 +22,15 @@
             </div>
         </div>
     </div>
-    <div class="container-ee details">
+    <div class="details">
         <div class="details__text">
             <p>
                 Conteúdos do site para estagiários. Caso você não seja um, pressione Ctrl + W ou Command + W para explorar lugares mais importantes!
             </p>
-            <a type="button" href="#posts" class="btnRound"> Sou estágiario </a>
+            <div class="details__buttons">
+                <a type="button" href="#posts" class="btnRound"> Sou estágiario </a>
+                <a type="button" class="btnRoundGray">Não sou estágiario</a>
+            </div>
         </div>
         <div class="details__info">
             <div class="info__container">
