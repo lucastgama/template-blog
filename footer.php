@@ -1,4 +1,4 @@
-<footer class="footer__container">
+<footer class="container__ee footer">
   <div class="container__information">
     <div class="information__Logo">Eterno <span>Estagiário.</span></div>
     <div class="information_col_about">

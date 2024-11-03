@@ -6,8 +6,11 @@ function theme_enqueue_styles_and_scripts()
     wp_enqueue_style('global', get_template_directory_uri() . '/assets/css/global.css');
     wp_enqueue_style('buttons', get_template_directory_uri() . '/assets/css/buttons.css');
     wp_enqueue_style('navbar', get_template_directory_uri() . '/assets/css/navbar.css');
-    wp_enqueue_style('jumbotron', get_template_directory_uri() . '/assets/css/jumbotron.css');
+    wp_enqueue_style('jumbotronSection', get_template_directory_uri() . '/assets/css/jumbotron.css');
     wp_enqueue_style('postsSection', get_template_directory_uri() . '/assets/css/postsSection.css');
+    wp_enqueue_style('aboutSection', get_template_directory_uri() . '/assets/css/about.css');
+    wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css');
+
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('navbar', get_template_directory_uri() . '/assets/js/navbar.js', array('jquery'), null, true);

@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb {
   .container__ee {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+    text-align: justify;
   }
   .section__title {
     font-size: 1.2rem;
