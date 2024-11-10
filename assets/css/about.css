@@ -1,8 +1,6 @@
 .container__about {
   display: flex;
   justify-content: center;
-  /* flex-direction: row; */
-  padding: 1rem 0;
   background-color: var(--white);
   gap: 1rem;
 }
@@ -66,17 +64,18 @@
 }
 
 @media (max-width: 768px) {
-  .container__about {
+  .about__container {
     flex-direction: column;
   }
   .about__image {
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
-    padding: 0.6rem;
+    padding: 0.3rem;
   }
   .about__text {
     width: 100%;
+    margin-bottom: 50px;
   }
   .image__frist {
     border-radius: 50%;

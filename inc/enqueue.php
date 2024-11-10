@@ -7,8 +7,9 @@ function theme_enqueue_styles_and_scripts()
     wp_enqueue_style('buttons', get_template_directory_uri() . '/assets/css/buttons.css');
     wp_enqueue_style('navbar', get_template_directory_uri() . '/assets/css/navbar.css');
     wp_enqueue_style('jumbotronSection', get_template_directory_uri() . '/assets/css/jumbotron.css');
-    wp_enqueue_style('postsSection', get_template_directory_uri() . '/assets/css/postsSection.css');
+    wp_enqueue_style('postsSection', get_template_directory_uri() . '/assets/css/posts.css');
     wp_enqueue_style('aboutSection', get_template_directory_uri() . '/assets/css/about.css');
+    wp_enqueue_style('rulesSection', get_template_directory_uri() . '/assets/css/rules.css');
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css');
 
 

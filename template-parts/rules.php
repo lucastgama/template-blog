@@ -1,5 +1,5 @@
-<section class="container__rules" id="rules">
-    <h3>Regras do blog</h3>
+<section class="container__ee container__rules" id="rules">
+    <h4 class="section__title ">Regras do blog</h4>
     <div class="rules__cards">
         <div class="rules__card">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ToxicComments.png" alt="" />
@@ -20,7 +20,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/RespectIntellectualProperty.png" alt="" />
             <h4>Propriedade Intelectual</h4>
             <p>
-                Pode copiar e se inspirar à vontade, mas dê os devidos créditos! Se não funcionar, a culpa não é nossa!
+                Pode copiar e se inspirar à vontade, mas se não funcionar, a culpa não é nossa!
             </p>
         </div>
     </div>

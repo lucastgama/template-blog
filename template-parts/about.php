@@ -1,5 +1,5 @@
 <section class="container__ee container__about" id="about">
-    <h4>Mais sobre o blog</h4>
+    <h4 class="section__title ">Mais sobre o blog</h4>
     <div class="about__container">
         <div class="about__image">
             <div class="image__frist">
@@ -14,7 +14,7 @@
                 sem as promessas exageradas dos cursos tradicionais.
             </p>
             <p>
-                O blog é conduzido por uma única (e extremamente qualificada) pessoa que já desempenhou papéis
+                O blog é conduzido por time (extremamente qualificada) que já desempenhou papéis
                 de pleno e sênior — dependendo do humor do chefe, claro! — trazendo explicações claras e dicas sinceras.
                 Queremos ajudar quem está começando ou apenas curioso, oferecendo informações úteis e um toque de humor
                 para deixar a jornada mais leve.
