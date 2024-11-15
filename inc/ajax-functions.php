@@ -113,5 +113,5 @@ function change_post_page()
     die();
 }
 
-// add_action('wp_ajax_change_post_page', 'change_post_page');
-// add_action('wp_ajax_nopriv_change_post_page', 'change_post_page');
+add_action('wp_ajax_change_post_page', 'change_post_page');
+add_action('wp_ajax_nopriv_change_post_page', 'change_post_page');

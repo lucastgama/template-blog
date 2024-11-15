@@ -18,28 +18,30 @@
 
 <body <?php body_class(); ?>>
   <header>
-    <nav class="navbar" aria-label="Desktop Navigation">
-      <div class="navbar__logo">
-        <a href="#home">Eterno <span>Estagiário.</span></a>
-      </div>
-      <div id="mainListDiv">
-        <ul class="desktop__links">
+    <div class="bg-black-nav__ee">
+      <nav class="navbar" aria-label="Desktop Navigation">
+        <div class="navbar__logo">
+          <a href="#home">Eterno <span>Estagiário.</span></a>
+        </div>
+        <div id="mainListDiv">
+          <ul class="desktop__links">
+            <li><a href="#posts">Blog</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#rules">Regras</a></li>
+          </ul>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+      </nav>
+      <nav class="navbar__mobile" aria-label="Mobile Navigation">
+        <ul class="mobile__links">
           <li><a href="#posts">Blog</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#rules">Regras</a></li>
         </ul>
-        <span class="navTrigger">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
-      </div>
-    </nav>
-    <nav class="navbar__mobile" aria-label="Mobile Navigation">
-      <ul class="mobile__links">
-        <li><a href="#posts">Blog</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#rules">Regras</a></li>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </header>
